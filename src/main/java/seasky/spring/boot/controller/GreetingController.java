@@ -14,7 +14,7 @@ import seasky.spring.boot.model.FruitModel;
 
 public class GreetingController {
 
-    private static final String template = "Hello, %s!";
+    private static final String template = "Hi, %s!";
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/greeting")
