@@ -3,6 +3,7 @@ package seasky.spring.boot.model;
 import com.google.gson.Gson;
 import org.apache.log4j.Logger;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +23,7 @@ public class FruitModel {
     }
 
     public Map<String, Object> getFruits() {
-
+        LOG.info("get fruits now:" + new Date());
         Map<String, Object> maps = new HashMap<>();
         maps.put("ret", 0);
         maps.put("item", fruits);
